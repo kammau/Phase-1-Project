@@ -1,0 +1,21 @@
+body {
+    background-image: url("https://wallpaperaccess.com/full/171177.jpg");
+}
+
+.input-feild {
+    text-align: center;
+    margin:auto;
+    display: block;
+    height: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#h1text {
+    text-align: center;
+}
+
+.lookupForm {
+    margin-top: 25%;
+}
+
