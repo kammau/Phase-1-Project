@@ -1,32 +1,32 @@
-document.addEventListener("DOMContentLoaded", fetchMonsters())
+document.getElementById("search-btn").addEventListener("click", whichMonster);
+let search_bar = document.getElementById("search-bar");
+let container = document.getElementById("container");
+const monsterCard = document.getElementById("monsterCard");
 
-let container = document.getElementsByClassName("searchBar")
+function whichMonster() {
+    if (search_bar.value.toLowerCase() === "creeper") {
+        monsterBringUp(1)
+    }
+}
 
-function fetchMonsters() {
-    fetch("http://localhost:3000/monsters")
+
+
+function monsterBringUp(idNum) {
+    fetch(`http://localhost:3000/monsters/${idNum}`)
     .then(function(response) {
         return response.json()
     })
     .then(function(data) {
-        monstersBringUp(data)
+        showMonster(data)
     })
 }
 
-function monstersBringUp(data) {
-    // Search button:
-    searchBtn = document.createElement("button");
-    searchBtn.classList.add("search-btn");
-    searchBtn.innerText = "Search";
-    searchBtn.addEventListener("click", function(event) {
-        searchMonsters(event)
-    })
-    
+function showMonster(data) {
+    monsterName = document.createElement("h2");
+    monsterName.innerText = data.name;
+    monsterCard.appendChild(monsterName);
 
-
-    // Monster
-    data.forEach(element => {
-        monsterName = document.createElement("h2");
-        monsterName.innerHtml = element[0].name;
-        container.appendChild(monsterName)
-    });
+    monsterImg = document.createElement("img");
+    monsterImg.setAttribute("src", `${data.image}`);
+    monsterCard.appendChild(monsterImg);
 }

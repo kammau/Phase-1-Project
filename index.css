@@ -2,20 +2,54 @@ body {
     background-image: url("https://wallpaperaccess.com/full/171177.jpg");
 }
 
-.input-feild {
+.input-area {
     text-align: center;
-    margin:auto;
+    margin: auto;
     display: block;
-    height: 20px;
-    width: 300px;
-    border-radius: 10px;
 }
 
 #h1text {
+    background-color: aliceblue;
+    border-radius: 10px;
+    background-size: 50% auto;
+    font-family: 'Games', sans-serif;
+                                                
+}
+
+.input-feild {
     text-align: center;
+    height: 20px;
+    width: 300px;
+    vertical-align: middle;
+    border-radius: 10px;
 }
 
-.lookupForm {
-    margin-top: 25%;
+#search-btn {
+    background-color: blue;
+    height: 22px;
+    vertical-align: middle;
 }
 
+#monsterCard {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px yellow;
+    background-color: gray;
+}
+
+#monsterInfo {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 30rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px yellow;
+    background-color: gray;
+}
