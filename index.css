@@ -40,6 +40,7 @@ body {
     margin: 1rem 2rem;
     box-shadow: 3px 4px yellow;
     background-color: gray;
+    position: absolute;
 }
 
 #monsterInfo {
@@ -52,4 +53,12 @@ body {
     margin: 1rem 2rem;
     box-shadow: 3px 4px yellow;
     background-color: gray;
+    margin-left: 30%;
 }
+
+.monsterImg {
+    justify-self: center;
+    height: 12rem;
+    width: auto;
+}
+

@@ -7,6 +7,9 @@ function whichMonster() {
     if (search_bar.value.toLowerCase() === "creeper") {
         monsterBringUp(1)
     }
+    if (search_bar.value.toLowerCase() === "zombie") {
+        monsterBringUp(2)
+    }
 }
 
 
@@ -27,6 +30,7 @@ function showMonster(data) {
     monsterCard.appendChild(monsterName);
 
     monsterImg = document.createElement("img");
-    monsterImg.setAttribute("src", `${data.image}`);
+    monsterImg.setAttribute("src", data.image);
+    monsterImg.classList.add("monsterImg");
     monsterCard.appendChild(monsterImg);
 }
