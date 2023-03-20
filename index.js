@@ -17,6 +17,8 @@ function whichMonster() {
         monsterBringUp(4)
     } else if (search_bar.value.toLowerCase() === "blaze") {
         monsterBringUp(5)
+    } else {
+        alert("Sorry Please Type in a Monster Name!")
     }
 }
 
@@ -72,8 +74,8 @@ function showMonster(data) {
         }
     })
     document.addEventListener("keydown", function(event) {
-        resetCard()
         if (event.key === "ArrowRight") {
+            resetCard()
             monsterID = data.id + 1;
             if (monsterID < 6) {
                 monsterBringUp(monsterID);
@@ -81,6 +83,7 @@ function showMonster(data) {
                 monsterBringUp(1)
             }
         } else if (event.key === "ArrowLeft") {
+            resetCard()
             monsterID = data.id - 1;
             if (monsterID < 6 && monsterID > 0) {
                 monsterBringUp(monsterID);
