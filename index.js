@@ -37,14 +37,14 @@ function showMonster(data) {
     monsterName = document.createElement("h2");
     monsterName.classList.add("remove");
     monsterName.innerText = data.name;
-    monsterCard.appendChild(monsterName);
+    monsterInfo.appendChild(monsterName);
    
     //monsterImg
     monsterImg = document.createElement("img");
     monsterImg.classList.add("remove");
     monsterImg.setAttribute("src", data.image);
     monsterImg.classList.add("monsterImg");
-    monsterCard.appendChild(monsterImg);
+    monsterInfo.appendChild(monsterImg);
 
     //monsterInfo:
     data["stats"].forEach(element => {

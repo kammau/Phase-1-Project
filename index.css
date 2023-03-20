@@ -30,25 +30,13 @@ body {
     vertical-align: middle;
 }
 
-#monsterCard {
-    text-align: center;
-    border: grey solid 1px;
-    padding: 1rem;
-    width: 15rem;
-    height: 25rem;
-    display: inline-grid;
-    margin: 1rem 2rem;
-    box-shadow: 3px 4px yellow;
-    background-color: gray;
-    position: absolute;
-}
 
 #monsterInfo {
     text-align: center;
     border: grey solid 1px;
     padding: 1rem;
-    width: 30rem;
-    height: 25rem;
+    width: 40rem;
+    height: 30rem;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px yellow;
@@ -60,5 +48,15 @@ body {
     justify-self: center;
     height: 12rem;
     width: auto;
+}
+
+#right-arrow {
+    height: 20px;
+    width: 25px;
+}
+
+#left-arrow {
+    height: 20px;
+    width: 25px;
 }
 
