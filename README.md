@@ -1,6 +1,6 @@
 # Minecraft Monsters
 DESCRIPTION:
-This web application iterates over a db.json file of five different minecraft monsters, each having unique stats. At the top of the page there is a search bar where you can look up the name of one of the five monsters (Creeper, Zombie, Skeleton, )
+This web application iterates over a db.json file of five different minecraft monsters, each having unique stats. At the top of the page there is a search bar where you can look up the name of one of the five monsters (Creeper, Zombie, Skeleton, Spider, and Blaze). If one of the five monster names is not typed and something else is, the page will produce an alert message telling the user to type in one of the five valid names.
 
 
 # Credit Acknowledgement
