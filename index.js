@@ -62,7 +62,9 @@ function showMonster(data) {
     // Left and right arrows:
     const leftBtn = document.getElementById("left-arrow");
     const rightBtn = document.getElementById("right-arrow");
-    leftBtn.addEventListener("click", function(event) {
+    rightBtn.addEventListener("click", function(event) {
+        monsterID = data.id + 1;
+        monsterBringUp(monsterID);
 
     })
 
