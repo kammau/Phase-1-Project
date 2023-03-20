@@ -4,7 +4,7 @@ document.getElementById("delete-btn").addEventListener("click", resetCard);
 let search_bar = document.getElementById("search-bar");
 let container = document.getElementById("container");
 const monsterCard = document.getElementById("monsterCard");
-
+const monsterInfo = document.getElementById("monsterInfo");
 
 function whichMonster() {
     if (search_bar.value.toLowerCase() === "creeper") {
@@ -35,20 +35,32 @@ function monsterBringUp(idNum) {
 function showMonster(data) {
     //monsterName
     monsterName = document.createElement("h2");
-    monsterName.setAttribute("id", "monsterName");
+    monsterName.classList.add("remove");
     monsterName.innerText = data.name;
     monsterCard.appendChild(monsterName);
-
+   
     //monsterImg
     monsterImg = document.createElement("img");
-    monsterImg.setAttribute("id", "monsterImg");
+    monsterImg.classList.add("remove");
     monsterImg.setAttribute("src", data.image);
     monsterImg.classList.add("monsterImg");
     monsterCard.appendChild(monsterImg);
+
+    //monsterInfo:
+    data["stats"].forEach(element => {
+        monsterStat = document.createElement("h3");
+        monsterStat.classList.add("remove");
+        monsterStat.innerText = element;
+        monsterInfo.appendChild(monsterStat);
+    });
+    monsterInformation = document.createElement("p");
+    monsterInformation.classList.add("remove");
+    monsterInformation.innerText = data.info;
+    monsterInfo.appendChild(monsterInformation);
+
 }
 
 function resetCard() {
-    document.getElementById("monsterName").remove()
-    document.getElementById("monsterImg").remove()
+    document.querySelectorAll(".remove").forEach(element => element.remove())
     search_bar.value = ""
 }
