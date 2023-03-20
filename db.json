@@ -31,19 +31,9 @@
     {
       "id": 5,
       "name": "Blaze",
-      "image": "https://static.wikia.nocookie.net/minecraft/images/b/b9/BlazeNew.png/revision/latest?cb=20191008033543"
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
+      "image": "https://static.wikia.nocookie.net/minecraft/images/b/b9/BlazeNew.png/revision/latest?cb=20191008033543",
+      "stats": ["HEARTS: ❤️x10", "DROPS: XP, Blaze Rod(UNCOMMON)"],
+      "info": "The Blaze is a hostile mob that spawns in the Nether in a Nether Fortress. The Blaze will shoot fireballs at the player that is within proximity."
     }
   ]
 }

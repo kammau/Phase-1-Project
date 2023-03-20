@@ -1,5 +1,6 @@
 document.getElementById("search-btn").addEventListener("click", whichMonster);
 document.getElementById("delete-btn").addEventListener("click", resetCard);
+document.addEventListener("DOMContentLoaded", monsterBringUp(1))
 
 let search_bar = document.getElementById("search-bar");
 let container = document.getElementById("container");
@@ -57,6 +58,13 @@ function showMonster(data) {
     monsterInformation.classList.add("remove");
     monsterInformation.innerText = data.info;
     monsterInfo.appendChild(monsterInformation);
+
+    // Left and right arrows:
+    const leftBtn = document.getElementById("left-arrow");
+    const rightBtn = document.getElementById("right-arrow");
+    leftBtn.addEventListener("click", function(event) {
+
+    })
 
 }
 
