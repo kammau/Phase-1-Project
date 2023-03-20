@@ -65,10 +65,28 @@ function showMonster(data) {
     rightBtn.addEventListener("click", function(event) {
         resetCard()
         monsterID = data.id + 1;
-        if (monsterID < 5) {
+        if (monsterID < 6) {
             monsterBringUp(monsterID);
         } else {
             monsterBringUp(1)
+        }
+    })
+    document.addEventListener("keydown", function(event) {
+        resetCard()
+        if (event.key === "ArrowRight") {
+            monsterID = data.id + 1;
+            if (monsterID < 6) {
+                monsterBringUp(monsterID);
+            } else {
+                monsterBringUp(1)
+            }
+        } else if (event.key === "ArrowLeft") {
+            monsterID = data.id - 1;
+            if (monsterID < 6 && monsterID > 0) {
+                monsterBringUp(monsterID);
+            } else {
+                monsterBringUp(1)
+            }
         }
     })
 }
