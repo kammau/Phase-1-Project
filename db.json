@@ -11,20 +11,22 @@
       "id": 2,
       "name": "Zombie",
       "image": "https://freepngimg.com/download/minecraft/9-2-minecraft-zombie-png.png",
-      "stats": ["HEARTS: ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️", "Drops : XP, Rotten Flesh(COMMON), Iron Ingot(RARE)"],
+      "stats": ["HEARTS: ❤️x10", "Drops : XP, Rotten Flesh(COMMON), Iron Ingot(RARE)"],
       "info": "The Zombie is a hostile mob that will burn in daylight. When close to a player it will attack causing damage of 2.5 to 4.5 hearts."
     },
     {
       "id": 3,
       "name": "Skeleton",
       "image": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7a/Lefthandedskeleton.png/revision/latest?cb=20210301080603",
-      "stats": ["HEARTS: ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️", "DROPS : XP, Bones(COMMON), Arrows(COMMON)"],
+      "stats": ["HEARTS: ❤️x10", "DROPS : XP, Bones(COMMON), Arrows(COMMON)"],
       "info": "The Skeleton is a hostile mob that when within a 16 block radius of the player will start chasing and shooting at the with their bow."
     },
     {
       "id": 4,
       "name": "Spider",
-      "image": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1f/Spider_JE4_BE3.png/revision/latest?cb=20200108012105"
+      "image": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1f/Spider_JE4_BE3.png/revision/latest?cb=20200108012105",
+      "stats": ["HEARTS: ❤️x8", "DROPS: XP, String(COMMON), Spider Eye(COMMON)"],
+      "info": "The Spider is a semi-hostile mob, meaning it will attack at night unprovoked when in proximity of a player but during the day will not attack unless provoked."
     },
     {
       "id": 5,
