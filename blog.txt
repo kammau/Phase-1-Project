@@ -19,8 +19,15 @@ Event listening is the ability for our webpage to listen for an "event" to happe
 	console.log("Hello!");
 }
 
-You may have tried the above example with high hopes, but when you ran the program the console returned an error. You may have rechecked it a couple of times, but with no avail. The reason for this error is 
+You may have tried the above example with high hopes, but when you ran the program the console returned an error. You may have rechecked it a couple of times, but with no avail. The reason our console keeps spouting out an error is that the console doesn't know where exactly we are listening for this event! So how do we tell our method we want to be listening for our button to be pressed? One of the most common ways to do this is to grab our button by its HTML given id, and assign it to a  variable so we can use it in our JavaScript code. Say our buttons id is htmlBtn, to grab this from our HTML document we can use document.getElementById, with our htmlBtn id and assign it to a variable, as shown below:
 
-The .addEventListener method makes it possible for us to "listen" for a click on that button, and when clicked, we can run a function to increase the value of our number. By simply adding getting the id of our HTML button and connecting that to our .addEventListener method we can make that button so much more interactive:
-const idOfButton = document.getElementById("htmlBtnId");
-idOfButton.addEventListener("click", function(event) {
+const htmlBtnVar = document.getElementById("htmlBtn");
+
+Now that we have our button element we can add our event listener!
+
+htmlBtnVar.addEventListener("click", function(event) {
+	console.log("Hello!");
+}
+
+
+
