@@ -4,35 +4,50 @@
       "id": 1,
       "name": "Creeper",
       "image": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c2f7.png",
-      "stats": ["HEARTS: ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️", "Drops : XP, Gunpowder(COMMON), music disks(RARE)"],
+      "stats": [
+        "HEARTS: ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️",
+        "Drops : XP, Gunpowder(COMMON), music disks(RARE)"
+      ],
       "info": "The creeper is a hostile mob that, when close to the player, will explode causing damage depending on how far the player is from the explosion."
     },
     {
       "id": 2,
       "name": "Zombie",
       "image": "https://freepngimg.com/download/minecraft/9-2-minecraft-zombie-png.png",
-      "stats": ["HEARTS: ❤️x10", "Drops : XP, Rotten Flesh(COMMON), Iron Ingot(RARE)"],
+      "stats": [
+        "HEARTS: ❤️x10",
+        "Drops : XP, Rotten Flesh(COMMON), Iron Ingot(RARE)"
+      ],
       "info": "The Zombie is a hostile mob that will burn in daylight. When close to a player it will attack causing damage of 2.5 to 4.5 hearts."
     },
     {
       "id": 3,
       "name": "Skeleton",
       "image": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7a/Lefthandedskeleton.png/revision/latest?cb=20210301080603",
-      "stats": ["HEARTS: ❤️x10", "DROPS : XP, Bones(COMMON), Arrows(COMMON)"],
+      "stats": [
+        "HEARTS: ❤️x10",
+        "DROPS : XP, Bones(COMMON), Arrows(COMMON)"
+      ],
       "info": "The Skeleton is a hostile mob that when within a 16 block radius of the player will start chasing and shooting at the with their bow."
     },
     {
       "id": 4,
       "name": "Spider",
       "image": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1f/Spider_JE4_BE3.png/revision/latest?cb=20200108012105",
-      "stats": ["HEARTS: ❤️x8", "DROPS: XP, String(COMMON), Spider Eye(COMMON)"],
+      "stats": [
+        "HEARTS: ❤️x8",
+        "DROPS: XP, String(COMMON), Spider Eye(COMMON)"
+      ],
       "info": "The Spider is a semi-hostile mob, meaning it will attack at night unprovoked when in proximity of a player but during the day will not attack unless provoked."
     },
     {
       "id": 5,
       "name": "Blaze",
       "image": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Blaze.gif/revision/latest?cb=20230214143150",
-      "stats": ["HEARTS: ❤️x10", "DROPS: XP, Blaze Rod(UNCOMMON)"],
+      "stats": [
+        "HEARTS: ❤️x10",
+        "DROPS: XP, Blaze Rod(UNCOMMON)"
+      ],
       "info": "The Blaze is a hostile mob that spawns in the Nether in a Nether Fortress. The Blaze will shoot fireballs at the player that is within proximity."
     }
   ]

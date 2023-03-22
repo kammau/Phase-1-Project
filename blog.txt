@@ -1,0 +1,17 @@
+THE IMPORTANCE OF EVENT LISTENING IN WEB DEVELOPMENT:
+The Importance of JavaScript in Web Development
+CHANGE TITLE
+Hello and welcome to my first blog post ever. I hope you enjoy this post on the intriguing world of JavaScript in web development. So without further introduction, grab a snack and sit back and enjoy.
+INTRODUCTION:
+If you did not already know, building a website with just HTML and CSS, and even just HTML, is completely possible. But that is not why I am here today, I am here to discuss the opposite. I want to tell you why JavaScript (JS) is so important in programming your web applications.
+JavaScript first appeared in 1995, two years after the release of HTML. Since then one of its biggest roles has been aiding HTML and CSS in the development of web sites and web applications. By now you may be asking yourself why was JavaScript invented if it's completely possible to create websites without it? Well the answer to that question is interactivity.
+JAVASCRIPT AND INTERACTIVITY:
+JavaScripts main part to play in the whole development scene is interactivity. So what do I mean by interactivity when it comes to web development. In the computer world, interactivity is defined as "the ability of a computer to respond to a user's input". Now think about your favorite web page for a moment. Does it have buttons? Maybe it has a text box where you can share a new recipe you've found. Perhaps even a heart, that when clicked on, will glow red and the like count will increase. All of these things involve JavaScript and the beautiful world of user browser interactivity. Without JavaScript, the websites that you know and love become bland. ***change*** So what is event listening?
+EVENT LISTENING IN JAVASCRIPT:
+Event listening is the ability for our webpage to listen for an "event" to happen, such as a button being clicked, then preform an action after that event has happened. Event Listening is a way we can make buttons, forms, and even a user moving their mouse over an element, more interactive. Let me present an example. Say you are developing a website that has a button, and you want your user to be able to press that button to increase a value. You may know how to create a button using HTML, but how do you make it so the value of the number increases. This is were the amazing JavaScript method .addEventListener comes in. 
+.addEventListener:
+.addEventListener is a built in JavaScript method that allows us to do the things discussed in the paragraph above. So how does it work? 
+
+The .addEventListener method makes it possible for us to "listen" for a click on that button, and when clicked, we can run a function to increase the value of our number. By simply adding getting the id of our HTML button and connecting that to our .addEventListener method we can make that button so much more interactive:
+const idOfButton = document.getElementById("htmlBtnId");
+idOfButton.addEventListener("click", function(event) {

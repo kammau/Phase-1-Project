@@ -1,3 +1,4 @@
+
 document.getElementById("search-btn").addEventListener("click", whichMonster);
 document.addEventListener("DOMContentLoaded", monsterBringUp(1))
 

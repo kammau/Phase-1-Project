@@ -42,6 +42,7 @@ body {
     box-shadow: 3px 4px yellow;
     background-color: gray;
     margin-left: 30%;
+    border-radius: 5px;
 }
 
 .monsterImg {
@@ -66,5 +67,6 @@ body {
     position: absolute;
     left: 75%;
     bottom: 50%;
+    border-radius: 5px;
 }
 
