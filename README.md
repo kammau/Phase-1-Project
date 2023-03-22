@@ -13,6 +13,7 @@ Photos:
     - Skeleton: https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7a/Lefthandedskeleton.png/revision/latest?cb=20210301080603
     - Spider: https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1f/Spider_JE4_BE3.png/revision/latest?cb=20200108012105
     - Blaze: https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Blaze.gif/revision/latest?cb=20230214143150
+    - Web Page Background: https://wallpaperaccess.com/full/171177.jpg
     
 Thanks to https://minecraft.fandom.com/wiki/Minecraft_Wiki for helping me get information about the monsters shown on my application.
     
