@@ -83,14 +83,6 @@ function showMonster(data) {
             } else {
                 monsterBringUp(1)
             }
-        } else if (event.key === "ArrowLeft") {
-            resetCard()
-            monsterID = data.id - 1;
-            if (monsterID < 6 && monsterID > 0) {
-                monsterBringUp(monsterID);
-            } else {
-                monsterBringUp(1)
-            }
         }
     })
 }
