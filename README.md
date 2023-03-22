@@ -2,7 +2,7 @@
 # DESCRIPTION:
 This web application iterates over a db.json file of five different minecraft monsters, each having unique stats. At the top of the page there is a search bar where you can look up the name of one of the five valid monster names monsters (Creeper, Zombie, Skeleton, Spider, and Blaze). If one of the five monster names is not typed and something else is, the page will produce an alert message telling the user to type in one of the five valid names. When the user types in a valid monster name, the page will render a picture of the monster along with information. The user can also use their right arrow key to navigate through the different monsters, or simply click the right arrow at the top loacted next to the search button. 
 
-#VIDEO WALKTHORUGH:
+# VIDEO WALKTHORUGH:
 https://youtu.be/cPcFVhTKp4I
 
 
