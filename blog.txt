@@ -11,8 +11,9 @@ JavaScripts main part to play in the whole development scene is interactivity. S
 
 EVENT LISTENING IN JAVASCRIPT:
 Event listening is the ability for our webpage to listen for an "event" to happen, such as a button being clicked, then preform an action after that event has happened. Event Listening is a way we can make buttons, forms, and even a user moving their mouse over an element, more interactive. Let me present an example. Say you are developing a website that has a button, and you want your user to be able to press that button to increase a value. You may know how to create a button using HTML, but how do you make it so the value of the number increases. This is were the amazing JavaScript method .addEventListener comes in. 
+
 .addEventListener:
-.addEventListener is a built in JavaScript method that allows us to do the things discussed in the paragraph above. So how does it work? 
+.addEventListener is a built in JavaScript method that allows us to do the things discussed in the paragraph above. So how does it work? The method takes two parameters, 1) what type of event to listen for, and 2) what to do when said event happens. Starting with the first parameter, there are many different events we can listen for. Going back to our example from above, we want to listen for the "click" of that button. So we know we are listening for a "click" event. With the second parameter we need to create a function that will increase our value. 
 
 The .addEventListener method makes it possible for us to "listen" for a click on that button, and when clicked, we can run a function to increase the value of our number. By simply adding getting the id of our HTML button and connecting that to our .addEventListener method we can make that button so much more interactive:
 const idOfButton = document.getElementById("htmlBtnId");
