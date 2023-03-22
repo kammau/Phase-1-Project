@@ -1,10 +1,11 @@
 THE IMPORTANCE OF EVENT LISTENING IN WEB DEVELOPMENT:
-The Importance of JavaScript in Web Development
-CHANGE TITLE
-Hello and welcome to my first blog post ever. I hope you enjoy this post on the intriguing world of JavaScript in web development. So without further introduction, grab a snack and sit back and enjoy.
+
 INTRODUCTION:
-If you did not already know, building a website with just HTML and CSS, and even just HTML, is completely possible. But that is not why I am here today, I am here to discuss the opposite. I want to tell you why JavaScript (JS) is so important in programming your web applications.
+If you did not already know, building a website with just HTML and CSS, and even just HTML, is completely possible. But in doing that you loose out on the beautiful opportunity of incorporating interactivity. In this post I will be discussing the importance of interactivity and one of the best ways to incorporate it into your website today.
+
+A LITTLE HISTORY ON JAVASCRIPT:
 JavaScript first appeared in 1995, two years after the release of HTML. Since then one of its biggest roles has been aiding HTML and CSS in the development of web sites and web applications. By now you may be asking yourself why was JavaScript invented if it's completely possible to create websites without it? Well the answer to that question is interactivity.
+
 JAVASCRIPT AND INTERACTIVITY:
 JavaScripts main part to play in the whole development scene is interactivity. So what do I mean by interactivity when it comes to web development. In the computer world, interactivity is defined as "the ability of a computer to respond to a user's input". Now think about your favorite web page for a moment. Does it have buttons? Maybe it has a text box where you can share a new recipe you've found. Perhaps even a heart, that when clicked on, will glow red and the like count will increase. All of these things involve JavaScript and the beautiful world of user browser interactivity. Without JavaScript, the websites that you know and love become bland. ***change*** So what is event listening?
 EVENT LISTENING IN JAVASCRIPT:
