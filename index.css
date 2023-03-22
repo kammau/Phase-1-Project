@@ -56,11 +56,6 @@ body {
     width: 25px;
 }
 
-#left-arrow {
-    height: 20px;
-    width: 25px;
-}
-
 #valid {
     background-color: gray;
     box-shadow: 3px 4px yellow;
