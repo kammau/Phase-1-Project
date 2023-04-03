@@ -1,46 +1,47 @@
 
 document.getElementById("search-btn").addEventListener("click", whichMonster);
-document.addEventListener("DOMContentLoaded", monsterBringUp(1))
+document.addEventListener("DOMContentLoaded", fetchMonsters);
 
 let search_bar = document.getElementById("search-bar");
 let container = document.getElementById("container");
 const monsterCard = document.getElementById("monsterCard");
 const monsterInfo = document.getElementById("monsterInfo");
+let globeData = [];
+let monster = [];
 
-function whichMonster() {
-    if (search_bar.value.toLowerCase() === "creeper") {
-        monsterBringUp(1)
-    } else if (search_bar.value.toLowerCase() === "zombie") {
-        monsterBringUp(2)
-    } else if (search_bar.value.toLowerCase() === "skeleton") {
-        monsterBringUp(3)
-    } else if (search_bar.value.toLowerCase() === "spider") {
-        monsterBringUp(4)
-    } else if (search_bar.value.toLowerCase() === "blaze") {
-        monsterBringUp(5)
-    } else {
-        alert("Sorry Please Type in a Monster Name!")
-    }
-}
-
-
-
-function monsterBringUp(idNum) {
-    fetch(`http://localhost:3000/monsters/${idNum}`)
+function fetchMonsters() {
+    fetch("http://localhost:3000/monsters")
     .then(function(response) {
         return response.json()
     })
     .then(function(data) {
-        showMonster(data)
+        globeData = Object.entries(data);
+        console.log(globeData)
+        showMonster(globeData[0][1])
     })
 }
 
+function whichMonster() {
+    globeData.forEach(element => {
+        if (search_bar.value === element[1].name) {
+            showMonster(element[1])
+        }
+    })
+}
+
+function getRandomMonster() {
+    return Math.floor(Math.random() * 5)
+}
+
+
 function showMonster(data) {
+    monster = data;
+    console.log(monster);
     resetCard()
     //monsterName
     monsterName = document.createElement("h2");
     monsterName.classList.add("remove");
-    monsterName.innerText = data.name;
+    monsterName.innerHtml = data.name;
     monsterInfo.appendChild(monsterName);
    
     //monsterImg
@@ -51,6 +52,7 @@ function showMonster(data) {
     monsterInfo.appendChild(monsterImg);
 
     //monsterInfo:
+    
     data["stats"].forEach(element => {
         monsterStat = document.createElement("h3");
         monsterStat.classList.add("remove");
@@ -62,30 +64,22 @@ function showMonster(data) {
     monsterInformation.innerText = data.info;
     monsterInfo.appendChild(monsterInformation);
 
-    // Left and right arrows:
-    const leftBtn = document.getElementById("left-arrow");
-    const rightBtn = document.getElementById("right-arrow");
-    rightBtn.addEventListener("click", function(event) {
-        resetCard()
-        monsterID = data.id + 1;
-        if (monsterID < 6) {
-            monsterBringUp(monsterID);
-        } else {
-            monsterBringUp(1)
-        }
-    })
+    
     document.addEventListener("keydown", function(event) {
         if (event.key === "ArrowRight") {
             resetCard()
-            monsterID = data.id + 1;
-            if (monsterID < 6) {
-                monsterBringUp(monsterID);
-            } else {
-                monsterBringUp(1)
-            }
+            showMonster(globeData[getRandomMonster()][1])
         }
     })
+    
 }
+
+// Right BTN:
+const rightBtn = document.getElementById("right-arrow");
+rightBtn.addEventListener("click", function(event) {
+    resetCard()
+    showMonster(globeData[getRandomMonster()][1])
+})
 
 function resetCard() {
     document.querySelectorAll(".remove").forEach(element => element.remove())
