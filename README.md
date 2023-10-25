@@ -4,13 +4,13 @@ This web application iterates over a db.json file of five different minecraft mo
 
 # Walkthrough:
 ## Startup:
-After forking and cloning, head over to this repo's root directory in your terminal. Once there, type `open index.html` to open up this project in your web browser. Next, to start our json server, type `json-server --watch db.json`. Then hit the reload button and you should now see the monster card full of monster information!
+After forking and cloning, head over to this repo's root directory in your terminal. Once there, type `open index.html` to open up this project in your web browser. Next, to start our json server, type `json-server --watch db.json`. Then, hit the reload button and you should now see the monster card's full of monster information!
 
 ## Monster Lookup:
-To lookup a monster, type one of the valid monster names into the search bar. Then pressing the search button, you should be taken to that specific monsters card.
+To look up a monster, type one of the valid monster names into the search bar. Then pressing the search button, you should be taken to that specific monster's card.
 
 ## Scroll-through (Random):
-To go through the monsters in no particular order, 
+To go through the monsters in no particular order, a user can press the right arrow key or click the right arrow button located next to the search button.
 
 
 
